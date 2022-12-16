@@ -1,0 +1,151 @@
+
+@media (max-width: 480px) {
+
+    body {
+        width: 100%;
+    }
+    /* Start main header */
+    header .logo {
+        width: 50%;
+        padding-top: 17px;
+    }
+    header nav {
+        width: 200px;
+    }
+    header nav ul li {
+        margin: 5px;
+        padding: 0px;
+
+    }
+
+
+    /* Start section-1 */
+    .section-1 {
+        margin-bottom: 50px;
+        padding-top: 50px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+
+    }
+    main .section-1 .text h1 {
+        font-size: 30px;
+    }
+    main .section-1 .img {
+        width: 100%;
+        height: 250px;
+    }
+    input[type="email"] {
+        width: 80%;
+        margin-right: 0;
+        border: 1px solid black;
+    }
+    input[type="submit"] {
+        margin-top: 10px;
+        width: 80%;
+    }
+    .section-1 form p {
+        display: none;
+    }
+
+
+
+
+
+
+    
+    /* Start section-2 */
+    .section-2 {
+        padding: 10px;
+        padding-bottom: 100px;
+        margin-top: 140px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .section-2::after {
+        top: -3%;
+        left:1%;
+        height: 200px;
+        background-image: url("../images/bg-curve-mobile.svg");
+    }
+    main .section-2 .img {
+        height: 300px;
+        text-align: center;
+    }
+    main .section-2 .img img {
+        width: 100%;
+    }
+    main .section-2 .text {
+        margin-top: 100px;
+        padding-left: 10px;
+    }
+    main .section-2 .text h1 {
+        text-align: center;
+        font-size: 15px;
+    }
+    .section-2  .icon  {
+        width: 190px;
+        font-size: 18px;
+        margin-left: 25%;
+    }
+    main .section-2 .card {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2%;   
+    }
+
+
+    /* Start section-3 */
+    .section-3 {
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .section-3 .text {
+        padding: 0;
+        width: 100%;
+    }
+    .section-3 form {
+        width: 100%;
+        padding: 0;
+        padding-left: 25px;
+        
+    }
+    .section-3 form input {
+        width: 87%;
+    }
+    .section-3 form p {
+        display: none;
+    }
+    .section-3 form [type="submit"] {
+        width: 87%;
+    }
+        
+    /* Start footer */
+    footer {
+        padding: 10px;
+        padding-top: 40px;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    footer .img-div {
+        width: 100%;
+        float: left;
+    }
+    footer nav {
+        width: 100%;
+    }
+    footer .foot-social {
+        text-align: center;
+        width: 100%;
+    }
+}

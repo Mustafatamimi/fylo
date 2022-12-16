@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    clear: both;
+}
+body {
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 100%;
+    padding-top: 2%;
+}
+/* Start main header */
+header {
+    font-family: 'Poppns', sans-serif;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-areas: "logo logo logo nav";
+}
+header .logo {
+    grid-area: logo;
+}
+header nav {
+    grid-area: nav;
+}
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+
+}
+header nav ul li a {
+    text-decoration: none;
+    color: hsl(243, 87%, 12%) ;
+}
+
+/* Start section-1 */
+.section-1 {
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "txt img"
+    ;
+
+}
+main .section-1 .text {
+    grid-area: txt;
+    font-weight: 300;
+}
+main .section-1 .text h1 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+main .section-1 .text p {
+    font-size: 18px;
+}
+main .section-1 .img {
+    grid-area: img;
+    height: 350px;
+    text-align: right;
+}
+main .section-1 .img img {
+    height: 100%;
+    width: 90%;
+}
+input[type="email"] {
+    height: 30px;
+    width: 200px;
+    outline: none;
+    margin-right: 15px;
+}
+input[type="submit"] {
+    background-color: hsl(224, 93%, 58%);
+    height: 35px;
+    width: 150px;
+    color: #fff;
+    border: none;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: hsl(170, 45%, 43%);
+}
+form p {
+    opacity: 0.6;
+}
+
+
+/* Start section-2 */
+.section-2 {
+    padding: 50px;
+    padding-bottom: 200px;
+    background-color: hsl(240, 75%, 98%);
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "txt img"
+    ;
+}
+.section-2::after {
+    content: "";
+    position: absolute;
+    top: -12%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("../images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+}
+main .section-2 .text {
+    grid-area: txt;
+}
+main .section-2 .text h1 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+main .section-2 .card {
+    width: 70%;
+    height: 55%;
+    background-color:hsl(0, 0%, 100%);
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px #f0f0f0;
+    
+}
+main .section-2 .card div {
+}
+main .section-2 .card div img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+main .section-2 .card div h3 {
+    display: inline-block;
+    width: 200px;
+    margin: 0;
+}
+main .section-2 .card div h5 {
+    display: inline-block;
+    margin: 0;
+    opacity: 0.8;
+}
+
+
+main .section-2 .img {
+    margin-top: 50px;
+    grid-area: img;
+    height: 450px;
+    text-align: right;
+}
+main .section-2 .img img {
+    height: 100%;
+    width: 90%;
+}
+.section-2  .icon  {
+    color:  hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    width: 200px;
+    font-size: 20px;
+}
+
+/* Start section-3 */
+.section-3 {
+    background-color: hsl(238, 22%, 44%);
+    padding: 50px;
+    color:hsl(240, 75%, 98%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text form";
+}
+.section-3 .text {
+    grid-area: text;
+    padding-right: 15%;
+}
+.section-3 form {
+    grid-area: form;
+    text-align: left;
+    padding-left: 20%;
+}
+.section-3 form input {
+    width: 65%;
+}
+.section-3 form [type="submit"] {
+    display: block;
+    margin-top: 5px;
+    width: 150px;
+}
+
+/* Start footer */
+footer {
+    background-color: hsl(243, 87%, 12%);
+    padding: 150px;
+    height: 350px;
+    color:hsl(240, 75%, 98%);
+    display: grid;
+    grid-template-areas: "logo link-1 link-2 icons";
+
+}
+footer .img-div {
+    margin-top: 20px;
+}
+footer .img-div img {
+    margin-right: 15px;
+}
+footer a {
+    color:hsl(240, 75%, 98%);
+    text-decoration: none;
+}
+footer nav ul {
+    list-style: none;
+}
+footer nav ul li {
+    margin-top: 20px;
+}
+footer .social-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
